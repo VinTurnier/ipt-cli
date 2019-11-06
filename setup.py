@@ -10,6 +10,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        ipt=ipt_pk.ipt:cli
+        ipt=ipt_pk.ipt:main
     ''',
 )
