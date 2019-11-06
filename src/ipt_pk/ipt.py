@@ -40,7 +40,7 @@ def stop():
     _stop.api()
 
 @cli.command()
-def start_ngrok():
+def ngrok():
     _start.ngrok()
 
 if __name__=='__main__':
