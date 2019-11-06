@@ -24,7 +24,7 @@ def install_packages():
 
 @cli.command()
 @click.option('--ipt_api',prompt='Enter ipt-api repository path')
-def configure(ipt_api,ipt_models):
+def configure(ipt_api):
     configuration = {
         'ipt-api':ipt_api,
     }
