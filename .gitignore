@@ -3,3 +3,4 @@ __pycache__
 *.pyc
 ipt_pk.egg-info
 ipt.egg-info
+.vscode

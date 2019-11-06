@@ -8,6 +8,7 @@ import click
 from ipt_pk.scripts import initialize
 from ipt_pk.scripts import configure as _configure
 from ipt_pk.scripts import start as _start
+from ipt_pk.scripts import stop as _stop
 
 @click.group()
 def cli():
@@ -23,18 +24,20 @@ def install_packages():
 
 @cli.command()
 @click.option('--ipt_api',prompt='Enter ipt-api repository path')
-@click.option('--ipt_models',prompt='Enter ipt-models repository path')
 def configure(ipt_api,ipt_models):
     configuration = {
         'ipt-api':ipt_api,
-        'ipt-models':ipt_models
     }
     _configure.read_config(configuration)
 
 
 @cli.command()
-def start_database():
-    _start.database()
+def start():
+    _start.api()
+
+@cli.command()
+def stop():
+    _stop.api()
 
 if __name__=='__main__':
     cli()
