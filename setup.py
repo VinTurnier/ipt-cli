@@ -13,7 +13,7 @@ required = [
     'scikit-image',
     'SQLAlchemy==1.3.10',
     'twilio==6.32.0',
-    'git+https://github.com/VinTurnier/ipt-models.git@master#egg=ipt',
+    'pytest',
 ]
 
 setup(

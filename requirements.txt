@@ -1,1 +1,0 @@
-git+ssh://git@github.com/vinturnier/ipt-models.git@master#egg=ipt
