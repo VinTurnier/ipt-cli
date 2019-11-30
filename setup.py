@@ -19,7 +19,7 @@ required = [
 
 setup(
     name='ipt_pk',
-    version='0.3.6',
+    version='0.5.2',
     packages=find_packages(where='src'),
     package_dir={'':'src'},
     install_requires=required,

@@ -18,3 +18,9 @@ def database():
 
 def api():
     pass
+
+def help():
+    print("Usage: ipt start [OPTIONS]")
+    print("Options:")
+    print("  --database  To start iptlocal database mysql instance")
+    print("  --help  Show this message and exit.")

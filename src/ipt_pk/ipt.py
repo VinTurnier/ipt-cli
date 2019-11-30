@@ -10,6 +10,7 @@ from ipt_pk.scripts import configure as _configure
 from ipt_pk.scripts import start as _start
 from ipt_pk.scripts import stop as _stop
 from ipt_pk.scripts import test as _test
+from ipt_pk.scripts import dump as _dump
 
 @click.group()
 def cli():
@@ -74,6 +75,13 @@ def test(switch):
     else:
         _test.help()
 
+@cli.command()
+@click.option('--production-database','switch',flag_value='production')
+def dump(switch):
+    if(switch=='production'):
+        _dump.production_database()
+    else:
+        _dump.help()
 
 if __name__=='__main__':
     cli()
