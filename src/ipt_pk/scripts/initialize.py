@@ -40,9 +40,11 @@ def install_requirements():
 
     config = configure.get_config()
     ipt_api_path = config['GIT REPOSITORIES']['ipt-api']
-
+    ipt_models_path = config['GIT REPOSITORIES']['ipt-models']
     print('installing all required packages for ipt-api')
     subprocess.call(f'pip install -r {ipt_api_path}/requirements.txt',shell=True)
+    print('installing all required packages for ipt-models')
+    subprocess.call(f'pip install -r {ipt_models_path}/requirements.txt',shell=True)
     print('All Packages are installed')
 
 
