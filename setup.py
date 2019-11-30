@@ -14,6 +14,7 @@ required = [
     'SQLAlchemy==1.3.10',
     'twilio==6.32.0',
     'pytest',
+    'factory-boy',
 ]
 
 setup(
