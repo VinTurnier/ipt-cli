@@ -3,8 +3,11 @@ IPT Command Line Interface
 
 Welcome to the IPT Command Line Interface or ipt-cli repository. This CLI is used to help manage the ipt project. Due to the fact that there are many different repositories that are used in this project the goal of ipt-cli is to use the command line interface to run test, upgrades, containers, manage aws, etc... By having the CLI you now spend less time figuring out where a script or directory is located, and more time runing your code.
 
-# Pre-requisits
-the ipt-cli uses `docker` to run local servers and databases, please make sure you have that installed before using the CLI
+# Pre-requisites
+- the ipt-cli uses `docker` to run local servers and databases, please make sure you have that installed before using the CLI
+- Add the `.my.cnf` file to the `ipt-models/test_db` directory so that the docker can have access to it. Also create a similar file in your home directory with the same credentials.
+- mysql installed `brew install mysql`
+- pipe viewer installed `$ brew install pv`
 
 # Installation
 To install this command line interface simply use the python package manager `pip`:
