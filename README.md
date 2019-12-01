@@ -6,7 +6,7 @@ Welcome to the IPT Command Line Interface or ipt-cli repository. This CLI is use
 # Pre-requisites
 - the ipt-cli uses `docker` to run local servers and databases, please make sure you have that installed before using the CLI
 - Add the `.my.cnf` file to the `ipt-models/test_db` directory so that the docker can have access to it. Also create a similar file in your home directory with the same credentials.
-- mysql installed `brew install mysql`
+- mysql installed `$ brew install mysql`
 - pipe viewer installed `$ brew install pv`
 
 # Installation
