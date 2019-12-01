@@ -41,7 +41,7 @@ This commands spins up a mysql:8.0.11 database container on your local machine. 
 ```s
 $ ipt dump --production-database
 ```
-Simply start the container again and your will now have production data on your local environment.
+Simply start the container again and your will now have production data on your local environment. This guarantees that your local database will always be similar to your production database. 
 
 
 # To Start
@@ -60,13 +60,4 @@ To setup `ipt-api` you must first add a file called `web.env` to the root of the
 # ipt-api/web.env
 Twilio_Account_SID='account sid'
 Twilio_Auth_Token='auth token'
-```
-This file is important as docker relies on it to connect to twilio. Once that is setup all you have to do it run the following commands:
-- first:
-```s
-$ ipt init
-```
-- second
-```s
-$ ipt configure
 ```
