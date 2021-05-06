@@ -4,7 +4,7 @@ required = [
     'alembic==1.2.1',
     'click',
     'Flask==1.1.1',
-    'Flask-Cors==3.0.8',
+    'Flask-Cors==3.0.9',
     'numpy',
     'opencv-contrib-python==3.4.2.16',
     'opencv-python==3.4.2.16',
