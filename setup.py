@@ -6,7 +6,7 @@ required = [
     'Flask==1.1.1',
     'Flask-Cors==3.0.8',
     'numpy',
-    'opencv-contrib-python==3.4.2.16',
+    'opencv-contrib-python==4.2.0.32',
     'opencv-python==3.4.2.16',
     'PyMySQL==0.9.3',
     'requests==2.22.0',
